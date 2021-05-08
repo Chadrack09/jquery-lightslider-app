@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import 'variables';
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0.4rem 0;
+}
+p{
+  margin: 0.2rem 0;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  // border-bottom: 1px solid;
+  box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: 0.3);
+
+  .logo img {
+    height: 35px;
+  }
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        // line-height: 43px;
+        margin-right: 1rem;
+        letter-spacing: 1px;
+        color: #111;
+      }
+    }
+  }
+
+  .search {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      height: 2rem;
+      width: 15rem;
+      border-radius: 0.4rem;
+      border: 1px solid rgba($color: #333, $alpha: 0.2);
+      outline: none;
+      padding: 0 0.4rem;
+    }
+    i {
+      // margin-left: 0.2rem;
+      padding: 0.5rem;
+      color: #fff;
+      background-color: #506fc4;
+      border-radius: 0.4rem;
+    }
+  }
+}
+
+.banner {
+    margin-top: 3rem;
+  .banner-box {
+    width: 430px;
+    height: 250px;
+    box-shadow: 5px 15px 30px rgba($color: #000000, $alpha: 0.3);
+    border-radius: $radius;
+    background-image: url(/src/img/s-3.jpg);
+    background-size: cover;
+    
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: $radius;
+    }
+  }
+}
+.cs-hidden {
+  overflow: visible;
+}
+.latest-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $shadow;
+  border-radius: $radius;
+  text-align: center;
+  overflow: hidden;
+  width: 200px;
+  // height: 300px;
+  .latest-img{
+    height: 270px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  .movies-box {
+    width: 250px;
+    height: 350px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    background-color: #fbfbfb;
+    margin: 1rem 1rem;
+
+    .movies-img {
+      height: 73%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: $radius $radius 0 0;
+      }
+    }
+  }
+}
+
+
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
